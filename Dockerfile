@@ -5,7 +5,7 @@ ARG CACHE_BUST=1
 RUN cd /comfyui && git fetch && git checkout 8f37471
 
 # Instala custom nodes
-RUN comfy-node-install comfyui-kjnodes comfyui-ic-light comfyui_ipadapter_plus comfyui_essentials ComfyUI-Hangover-Nodes
+#RUN comfy-node-install comfyui-kjnodes comfyui-ic-light comfyui_ipadapter_plus comfyui_essentials ComfyUI-Hangover-Nodes
 
 # Cria script de download
 RUN cat <<'EOF' > /download_models.sh
